@@ -99,38 +99,41 @@
 <!--Formulario de contacto-->
 <section>
     <h2>Contacto</h2>
-    <form action="#">
+    <form action="#" class="formulario">
         <fieldset>
             <legend>Contatame llenando los campos.</legend>
             
-            <div>
-                <label for="#">Nombre</label>
-                <input type="text" placeholder="Tu Nombre">
+            <div class="contenedor-campos">
+                <div class="campo">
+                    <label for="#">Nombre</label>
+                    <input class="input-text" type="text" placeholder="Tu Nombre">
+                </div>
+
+                <div class="campo">
+                    <label for="#">Telefono</label>
+                    <input class="input-text" type="tel" placeholder="Tu telefono">
+                </div>
+
+                <div class="campo">
+                    <label for="#">Email</label>
+                    <input class="input-text" type="email" placeholder="Tu correo electronico">  
+                </div>
+
+                <div class="campo">
+                    <label for="#">Mensaje</label>
+                    <textarea class="input-text" ></textarea>
+                </div>
             </div>
                 
-            <div>
-                <label for="#">Telefono</label>
-                <input type="tel" placeholder="Tu telefono">
-            </div>
-
-            <div>
-                <label for="#">Email</label>
-                <input type="email" placeholder="Tu correo electronico">  
-            </div>
-
-            <div>
-                <label for="#">Mensaje</label>
-                <textarea ></textarea>
-            </div>
+                <div class="enviar">
+                <input type="submit" class="Boton">
+                </div>
             
-            <div>
-            <input type="submit">
-            </div>
-        
         </fieldset>
     </form>
 
 </section>
+</main>
 <!--Pie de pagina-->
 <footer>
     <p>Todos los derechos reservados. Ariel Hernandez Rojas Freelancer.</p>
