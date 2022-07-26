@@ -1,0 +1,119 @@
+:root{
+    --fondo: #141414;
+    --primario: #ff311f;
+    --secundario: #6c8dda;
+    --letra: #DFE3DD;
+    --terciario: #7dca9a
+
+}
+html{
+    font-size: 62.5%;
+    color: var(--letra);
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to right, var(--fondo) 0%, var(--secundario) 100%);
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+.titulo span{
+    font-size: 2rem;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.Boton{
+    background-color: var(--secundario);
+    color: var(--letra);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5rem;
+    width: 40%;
+    text-align: center;
+}
+@media(min-width: 768px) {
+    .boton{
+        width: auto;
+    }
+}
+.tema{
+    background-color: var(--fondo);   
+}
+.nav-bg{
+    background-color: var(--secundario);
+}
+.NavegaciónPrincipal{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.NavegaciónPrincipal a{
+    padding: 1rem;
+    color: var(--letra);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.NavegaciónPrincipal a:hover{
+    background-color: var(--primario);
+    color: var(--fondo)
+}
+.hero{
+    background-image: url(../img/estudios-desarrollador-web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+}
+.contenidoHero{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0, 0, .6);
+    background-color: rgb(0 0 0 / 60%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenidoHero h2, 
+.contenidoHero p{
+ color: var(--letra);
+
+}
+.ubicacion{
+    display: flex;
+    align-items: flex-end;
+}
+/*@media(min-width: 480px) {"solo cuando sea un telefono"}*/
+
+/*Cuando se trata de una tablet*/
+@media(min-width: 768px) {
+    .NavegaciónPrincipal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+/*@media(min-width: 1140px) {Laptop o pc de escritorio}*/
+/*@media(min-width: 1440) { para pc tambien}*/
